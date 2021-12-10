@@ -1,0 +1,15 @@
+current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.3/ext/bootsnap
+/Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.6/bin/ruby -I /Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211210-49387-4c1sqf.rb extconf.rb
+creating Makefile
+
+current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.3/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.3/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.3/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20211210-49387-cf3lsq/bootsnap
