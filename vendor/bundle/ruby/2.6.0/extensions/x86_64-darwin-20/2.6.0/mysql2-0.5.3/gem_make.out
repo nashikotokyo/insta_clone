@@ -1,5 +1,5 @@
 current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
-/Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.4/bin/ruby -I /Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20211210-62885-7au5zj.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl/lib --with-cppflags\=-I/usr/local/opt/openssl/include
+/Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.4/bin/ruby -I /Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20211214-22666-21q9i6.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl/lib
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for rb_wait_for_single_fd()... yes
@@ -41,4 +41,4 @@ linking shared-object mysql2/mysql2.bundle
 
 current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20211210-62885-1d2yqir/mysql2
+/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20211214-22666-1cgsea8/mysql2

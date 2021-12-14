@@ -1,5 +1,5 @@
 current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/msgpack-1.4.2/ext/msgpack
-/Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.6/bin/ruby -I /Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211210-49387-1eb7smv.rb extconf.rb
+/Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.4/bin/ruby -I /Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20211214-18971-12tuv9x.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -13,10 +13,10 @@ checking for rb_hash_clear() in ruby.h... yes
 creating Makefile
 
 current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/msgpack-1.4.2/ext/msgpack
-make DESTDIR\= clean
+make "DESTDIR=" clean
 
 current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/msgpack-1.4.2/ext/msgpack
-make DESTDIR\=
+make "DESTDIR="
 compiling buffer.c
 compiling buffer_class.c
 compiling extension_value_class.c
@@ -39,5 +39,5 @@ compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.bundle
 
 current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/msgpack-1.4.2/ext/msgpack
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20211210-49387-1n65krd/msgpack
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20211214-18971-1wi1pgl/msgpack
