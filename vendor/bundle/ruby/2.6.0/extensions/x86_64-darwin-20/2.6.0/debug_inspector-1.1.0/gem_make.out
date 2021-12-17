@@ -1,0 +1,15 @@
+current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+/Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.4/bin/ruby -I /Users/natsumimatsuda/.anyenv/envs/rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20211217-1516-183i0hk.rb extconf.rb
+creating Makefile
+
+current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/natsumimatsuda/workspace/menta!/insta_clone/insta_clone_by_me/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20211217-1516-5dj3v6
