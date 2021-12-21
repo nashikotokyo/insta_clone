@@ -15,5 +15,12 @@ module InstaCloneByMe
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    config.generators do |g|
+      g.assets false  # CSS, JavaScriptファイル生成せず
+      g.helper false  # helperファイルを生成せず
+      g.skip_routes true  # trueならroutes.rb変更せず、falseなら通常通り変更
+      g.test_framework false  # testファイル生成せず
+    end
   end
 end
