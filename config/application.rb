@@ -22,5 +22,8 @@ module InstaCloneByMe
       g.skip_routes true  # trueならroutes.rb変更せず、falseなら通常通り変更
       g.test_framework false  # testファイル生成せず
     end
+
+    config.time_zone = "Tokyo"
+    config.active_record.default_timezone = :local
   end
 end
