@@ -41,6 +41,7 @@ gem 'redis-rails'
 gem 'annotate'
 gem 'rails-i18n', '~> 5.1'
 gem 'carrierwave'
+gem 'mini_magick'
 gem 'font-awesome-sass'
 
 group :development, :test do
