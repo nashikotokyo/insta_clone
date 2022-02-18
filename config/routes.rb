@@ -22,7 +22,7 @@
 #      rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
 
 Rails.application.routes.draw do
-  root 'users#new'
+  root 'posts#index'
 
   resources :posts
   resources :users, only: %i[new create]
