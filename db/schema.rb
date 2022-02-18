@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_02_03_023838) do
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
-    t.string "images", null: false
+    t.json "images", null: false
     t.text "body", null: false
     t.bigint "user_id"
     t.datetime "created_at", null: false
