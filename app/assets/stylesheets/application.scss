@@ -1,6 +1,7 @@
  @import 'bootstrap-material-design/dist/css/bootstrap-material-design';
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+ @import 'swiper/swiper-bundle';
 
 body {
   position: relative;
@@ -31,6 +32,10 @@ img {
   }
 }
 
+.swiper {
+  width: 100%;
+}
+
 .post {
   max-width: 400px;
   margin: 0 auto;
@@ -55,6 +60,7 @@ img {
 
   .image-box {
     width: 400px;
+    height: 400px;     
     @media screen and (max-width: 767px) {
       width: 100%;
       text-align: center
