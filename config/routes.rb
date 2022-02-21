@@ -2,6 +2,14 @@
 #
 #                    Prefix Verb   URI Pattern                                                                              Controller#Action
 #                      root GET    /                                                                                        users#new
+#                     posts GET    /posts(.:format)                                                                         posts#index
+#                           POST   /posts(.:format)                                                                         posts#create
+#                  new_post GET    /posts/new(.:format)                                                                     posts#new
+#                 edit_post GET    /posts/:id/edit(.:format)                                                                posts#edit
+#                      post GET    /posts/:id(.:format)                                                                     posts#show
+#                           PATCH  /posts/:id(.:format)                                                                     posts#update
+#                           PUT    /posts/:id(.:format)                                                                     posts#update
+#                           DELETE /posts/:id(.:format)                                                                     posts#destroy
 #                     users POST   /users(.:format)                                                                         users#create
 #                  new_user GET    /users/new(.:format)                                                                     users#new
 #                     login GET    /login(.:format)                                                                         user_sessions#new
@@ -14,8 +22,9 @@
 #      rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
 
 Rails.application.routes.draw do
-  root 'users#new'
+  root 'posts#index'
 
+  resources :posts
   resources :users, only: %i[new create]
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'

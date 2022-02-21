@@ -26,6 +26,8 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+/config/database.yml
 /vendor
 dump.rdb
 .DS_Store
+/public/uploads
