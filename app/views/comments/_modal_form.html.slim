@@ -1,0 +1,9 @@
+.modal#comment-edit-modal tabindex="-1" role="dialog"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title コメント編集
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true" ×
+      .modal-body
+        = render 'form', post: nil, comment: comment
