@@ -85,12 +85,19 @@ img {
       overflow: scroll;
       max-height: 250px;
     }
+
     .post-comment {
       margin-top: auto;
       .input-comment-body {
         flex: 1;
       }
     }
+  }
+}
+
+.modal-body {
+  .input-comment-body {
+    flex: 1
   }
 }
 
