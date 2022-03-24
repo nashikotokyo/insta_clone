@@ -8,6 +8,7 @@
 #                     users GET    /users(.:format)                                                                         users#index
 #                           POST   /users(.:format)                                                                         users#create
 #                  new_user GET    /users/new(.:format)                                                                     users#new
+#                      user GET    /users/:id(.:format)                                                                     users#show
 #             post_comments GET    /posts/:post_id/comments(.:format)                                                       comments#index
 #                           POST   /posts/:post_id/comments(.:format)                                                       comments#create
 #          new_post_comment GET    /posts/:post_id/comments/new(.:format)                                                   comments#new
@@ -41,7 +42,7 @@ Rails.application.routes.draw do
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
 
-  resources :users, only: %i[new create index]
+  resources :users, only: %i[new create index show]
   resources :posts, shallow: true do
     resources :comments
   end
