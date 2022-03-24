@@ -5,7 +5,8 @@
 #                     login GET    /login(.:format)                                                                         user_sessions#new
 #                           POST   /login(.:format)                                                                         user_sessions#create
 #                    logout DELETE /logout(.:format)                                                                        user_sessions#destroy
-#                     users POST   /users(.:format)                                                                         users#create
+#                     users GET    /users(.:format)                                                                         users#index
+#                           POST   /users(.:format)                                                                         users#create
 #                  new_user GET    /users/new(.:format)                                                                     users#new
 #             post_comments GET    /posts/:post_id/comments(.:format)                                                       comments#index
 #                           POST   /posts/:post_id/comments(.:format)                                                       comments#create
@@ -40,7 +41,7 @@ Rails.application.routes.draw do
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
 
-  resources :users, only: %i[new create]
+  resources :users, only: %i[new create index]
   resources :posts, shallow: true do
     resources :comments
   end
