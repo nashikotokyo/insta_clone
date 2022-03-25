@@ -1,7 +1,11 @@
 class PostsController < ApplicationController
   before_action :require_login, only: %i[new create edit update destroy]
   def index
-    @posts = Post.all.includes(:user).order(created_at: :desc).page(params[:page])
+    @posts = if logged_in?
+      current_user.feed.includes(:user).order(created_at: :desc).page(params[:page])
+             else   
+               Post.all.includes(:user).order(created_at: :desc).page(params[:page])
+             end
     @users = User.recent(5)
   end
 
