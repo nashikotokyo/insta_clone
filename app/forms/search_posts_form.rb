@@ -1,7 +1,7 @@
 class SearchPostsForm
   include ActiveModel::Model
   include ActiveModel::Attributes
-  
+
   attribute :body, :string
   attribute :comment_body, :string
   attribute :username, :string
@@ -13,7 +13,6 @@ class SearchPostsForm
     scope = scope.username_contain(username) if username.present?
     scope
   end
-
 
   private
 
