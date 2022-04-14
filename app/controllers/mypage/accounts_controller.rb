@@ -12,9 +12,9 @@ class Mypage::AccountsController < Mypage::BaseController
       render :edit
     end
   end
-  
+
   private
-  
+
   def account_params
     params.require(:user).permit(:email, :username, :avatar, :avatar_cache)
   end
