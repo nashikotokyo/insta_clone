@@ -4,3 +4,11 @@
 main {
   padding-top: 50px;
 }
+
+#header-activities {
+  width: 400px;
+  .dropdown-item {
+    max-width: initial;
+    font-size: 12px;
+  }
+}

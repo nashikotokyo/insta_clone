@@ -33,6 +33,7 @@
 #       edit_mypage_account GET    /mypage/account/edit(.:format)                                                           mypage/accounts#edit
 #            mypage_account PATCH  /mypage/account(.:format)                                                                mypage/accounts#update
 #                           PUT    /mypage/account(.:format)                                                                mypage/accounts#update
+#         mypage_activities GET    /mypage/activities(.:format)                                                             mypage/activities#index
 #        rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
 # rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
 #        rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
@@ -58,5 +59,6 @@ Rails.application.routes.draw do
 
   namespace :mypage do
     resource :account, only: %i[edit update]
+    resources :activities, only: %i[index]
   end
 end

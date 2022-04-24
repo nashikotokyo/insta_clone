@@ -1,0 +1,8 @@
+- if @activities.present?
+  - @activities.each do |activity|
+    = render "shared/#{activity.action_type}", activity: activity
+  .mt-3
+    = paginate @activities
+- else
+  .text-center
+    | お知らせはありません
