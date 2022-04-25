@@ -30,6 +30,7 @@
 #                      like DELETE /likes/:id(.:format)                                                                     likes#destroy
 #             relationships POST   /relationships(.:format)                                                                 relationships#create
 #              relationship DELETE /relationships/:id(.:format)                                                             relationships#destroy
+#             read_activity PATCH  /activities/:id/read(.:format)                                                           activities#read
 #       edit_mypage_account GET    /mypage/account/edit(.:format)                                                           mypage/accounts#edit
 #            mypage_account PATCH  /mypage/account(.:format)                                                                mypage/accounts#update
 #                           PUT    /mypage/account(.:format)                                                                mypage/accounts#update
@@ -56,6 +57,9 @@ Rails.application.routes.draw do
   end
   resources :likes, only: %i[create destroy]
   resources :relationships, only: %i[create destroy]
+  resources :activities, only: [] do
+    patch :read, on: :member
+  end
 
   namespace :mypage do
     resource :account, only: %i[edit update]
