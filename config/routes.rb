@@ -42,6 +42,10 @@
 #      rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
 
 Rails.application.routes.draw do
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+  
   root 'posts#index'
 
   get 'login', to: 'user_sessions#new'
