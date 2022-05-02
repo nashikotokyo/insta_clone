@@ -208,6 +208,8 @@ GEM
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     mysql2 (0.5.3)
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-darwin)
@@ -235,6 +237,8 @@ GEM
     puma (3.12.6)
     racc (1.6.0)
     rack (2.2.3)
+    rack-protection (2.2.0)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.6)
@@ -330,6 +334,11 @@ GEM
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
+    sinatra (2.2.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
+      tilt (~> 2.0)
     slim (4.1.0)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
@@ -408,6 +417,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   selenium-webdriver
   sidekiq
+  sinatra
   slim-rails
   sorcery
   spring
