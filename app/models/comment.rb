@@ -27,7 +27,7 @@ class Comment < ApplicationRecord
   validates :body, presence: true, length: { maximum: 1000 }
 
   after_create_commit :create_activities
-  
+
   private
 
   def create_activities
