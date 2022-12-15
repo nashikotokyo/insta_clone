@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: insta_clone_by_me_production
-  username: insta_clone_by_me
-  password: <%= ENV['INSTA_CLONE_BY_ME_DATABASE_PASSWORD'] %>
+  database: insta_clone_production
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
